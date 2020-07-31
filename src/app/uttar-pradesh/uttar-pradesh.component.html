@@ -1,0 +1,29 @@
+<p>uttar-pradesh works!</p>
+<div class="container-fluid">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>confirmedCasesIndian</th>
+                <th>confirmedCasesForeign</th>
+                <th>discharged</th>
+                <th>deaths</th>
+                <th>loc</th>
+                <th>totalConfirmed</th>
+            </tr>
+        </thead>
+        <tbody>
+            <ng-container *ngFor="let case of cases[0].data.regional;let i=index">
+                <tr *ngIf="i==33">
+                  <td>{{case.confirmedCasesIndian}}</td>
+                  <td>{{case.confirmedCasesForeign}}</td>
+                  <td>{{case.discharged}}</td>
+                  <td>{{case.deaths}}</td>
+                  <td>{{case.loc}}</td> 
+                  <td>{{case.totalConfirmed}}</td>
+                </tr>
+            </ng-container>
+        </tbody>
+    </table>
+</div>
+
+
