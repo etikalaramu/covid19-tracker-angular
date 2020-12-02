@@ -1,33 +1,112 @@
-<div class="topnav" id="myTopnav">
-  <a routerLink="total" routerLinkActive="active" id="a1">Home</a>
-  <a routerLink="summary" routerLinkActive="active" id="mya">Total Cases</a>
-</div>
+<!-- <nav class="navbar bg-info navbar-dark" id="topnav">
+    <ul class="navbar-nav mr-auto" id="firstul">
+      <li class="nav-item">
+          <a href="#"><i class="fa fa-bars nav-link" aria-hidden="true" onclick="openNav()"></i></a>
+      </li>
+      <li class="nav-item" id="home" >
+        <a class="nav-link" routerLink="total" routerLinkActive="active" id="a1">Home</a>
+       </li>
+  </ul>
+    <ul class="navbar-nav ml-auto" id="secondul">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="summary" routerLinkActive="active" id="mya">Total Cases</a>
+       </li>
+    </ul>
+</nav> -->
+
 <div class="row">
-  <div class="col-sm-2 sidebar">
-      <a routerLink="total" routerLinkActive="active">State Wise Cases</a>
-       <a routerLink="andhrapradesh" routerLinkActive="active">Andhra Pradesh</a>
-       <a routerLink="assam" routerLinkActive="active">Assam</a>
-       <a routerLink="bihar" routerLinkActive="active">Bihar</a>
-       <a routerLink="chattisgarh" routerLinkActive="active">Chattisgarh</a>
-       <a routerLink="delhi" routerLinkActive="active">Delhi</a>
-       <a routerLink="goa" routerLinkActive="active">Goa</a>
-       <a routerLink="gujarath" routerLinkActive="active">Gujarath</a>
-       <a routerLink="haryana" routerLinkActive="active">Haryana</a>
-       <a routerLink="jammu-kashmir" routerLinkActive="active">Jammu and Kashmir</a>
-       <a routerLink="karnataka" routerLinkActive="active">Karnataka</a>
-       <a routerLink="kerala" routerLinkActive="active">Kerala</a>
-       <a routerLink="madhya-pradesh" routerLinkActive="active">Madhya Pradesh</a>
-       <a routerLink="maharashtra" routerLinkActive="active">Maharashtra</a>
-       <a routerLink="odisha" routerLinkActive="active">Odisha</a>
-       <a routerLink="punjab" routerLinkActive="active">Punjab</a>
-       <a routerLink="rajasthan" routerLinkActive="active">Rajasthan</a>
-       <a routerLink="tamil-nadu" routerLinkActive="active">Tamil Nadu</a>
-       <a routerLink="telangana" routerLinkActive="active">Telangana</a>
-       <a routerLink="uttar-pradesh" routerLinkActive="active">Uttar Pradesh</a>
-       <a routerLink="west-bengal" routerLinkActive="active">West Bengal</a>
+  <div class="col-sm-0" id="sidebar">
+    <nav class="navbar navbar-dark bg-dark" id="sidebarnav">
+        <ul class="navbar-nav" id="myul">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+            <li class="nav-item">
+              <a class="nav-link" routerLink="total" routerLinkActive="active">State Wise Cases</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="andhrapradesh" routerLinkActive="active">Andhra Pradesh</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="assam" routerLinkActive="active">Assam</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="bihar" routerLinkActive="active">Bihar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="chattisgarh" routerLinkActive="active">Chattisgarh</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="delhi" routerLinkActive="active">Delhi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="goa" routerLinkActive="active">Goa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="gujarath" routerLinkActive="active">Gujarath</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="haryana" routerLinkActive="active">Haryana</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="jammu-kashmir" routerLinkActive="active">Jammu and Kashmir</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="karnataka" routerLinkActive="active">Karnataka</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="kerala" routerLinkActive="active">Kerala</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="madhya-pradesh" routerLinkActive="active">Madhya Pradesh</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="maharashtra" routerLinkActive="active">Maharashtra</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="odisha" routerLinkActive="active">Odisha</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="punjab" routerLinkActive="active">Punjab</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="rajasthan" routerLinkActive="active">Rajasthan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="tamil-nadu" routerLinkActive="active">Tamil Nadu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="telangana" routerLinkActive="active">Telangana</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="uttar-pradesh" routerLinkActive="active">Uttar Pradesh</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="west-bengal" routerLinkActive="active">West Bengal</a>
+            </li>
+        </ul>
+    </nav>
   </div>
-  <div class="col-sm-10">
-       <router-outlet></router-outlet>
+  <div class="col-sm-12" id="main">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-info" id="topnav">
+      <ul class="navbar-nav" id="rightul">
+          <li class="nav-item" id="menu">
+            <!-- <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#sidebarnav">Simple collapsible</button> -->
+              <a class="nav-link" href="#"><i class="fa fa-bars" aria-hidden="true" onclick="openNav()"></i></a>
+          </li>
+          <li class="nav-item" id="home" >
+            <a class="nav-link" routerLink="total" routerLinkActive="active" id="a1">Home</a>
+           </li>
+      </ul>
+      <ul class="navbar-nav ml-auto" id="secondul">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="summary" routerLinkActive="active" id="mya">Total Cases</a>
+         </li>
+      </ul>
+    </nav>
+     <div class="container-fluid">
+      <router-outlet></router-outlet>
+     </div>
+       
   </div>
 </div>
 <!-- <app-total></app-total> -->
